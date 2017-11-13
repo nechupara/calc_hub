@@ -12,6 +12,5 @@ print('масштаб %s:%s' % (scale1, scale2))
 print('в 1 мм %s м        (/%s)' % (mm_to_m, m_to_mm))
 print('в 1 м %s мм        (/%s)' % (m_to_mm, mm_to_m))
 print()
-
 print('в 1 мм %s км        (/%s)' % (mm_to_km, km_to_mm))
 print('в 1 км %s мм        (/%s)' % (km_to_mm, mm_to_km))
