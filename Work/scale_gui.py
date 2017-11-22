@@ -15,8 +15,14 @@ class Frame_1(Frame):
         Frame.__init__(self, master, background='green')
         
 
+class Frame_1(Frame):
+    def __init__(self, master):
+        Frame.__init__(self, master)
+
+
 root = Tk()
 root.title('Масштаб')
+
 root.geometry('500x400+200+200')
 root.tk_setPalette(background='purple')
 
@@ -31,5 +37,6 @@ label_scale.grid(row=10, column=10, padx=5)
 entry_scale1 = Entry_1(frame_input)
 entry_scale1.configure(bg='green', width=10, font='Arial 10')
 entry_scale1.grid(row=10, column = 13, sticky='n')
+
 
 root.mainloop()

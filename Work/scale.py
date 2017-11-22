@@ -1,6 +1,6 @@
-#scale1 : scale2
+# scale1 : scale2
 scale1 = 1
-scale2 = 2000
+scale2 = 100000
 
 mm_to_m = scale2/(scale1*1000)
 m_to_mm = scale1*1000/scale2
