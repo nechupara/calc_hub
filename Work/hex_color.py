@@ -7,8 +7,8 @@ print(x)
 x = 5
 y = 6
 op = '+'
-res_str ='k='+str(x)+op+str(y)
-res = eval(res_str)
+res_str ='k =' + str(x)+op+str(y)
+res = exec(res_str)
 # eval(res_str)
 print(res)
 # print(m)

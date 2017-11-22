@@ -10,15 +10,26 @@ class Entry_1(Entry):
         Entry.__init__(self,  master)
         self.insert(0,'enter')
 
+class Frame_1(Frame):
+    def __init__(self, master):
+        Frame.__init__(self, master)
+
+
 root = Tk()
 root.title('Масштаб')
-root.geometry('500x400+200+200')
+root.config(bg='gray')
+root.geometry('500x400+600+300')
 
-label_scale = Label_1(root)
-label_scale.config(justify=RIGHT, text='масштаб', width=5,  bg = 'gray', anchor=W, padx=0, pady=0)
-label_scale.place(x=10, y=10, anchor='nw')
+frame_input = Frame_1(root)
+frame_input.config(bg='green')
+frame_input.place(x = 20, y = 20, width=460, height=30)
 
-# entry_scale1 = Entry_1(root)
-# entry_scale1.place(x=50, y = 10)
+
+label_scale1 = Label_1(frame_input)
+label_scale1.config(justify=RIGHT, text='масштаб', width=5,  bg = 'red', anchor=W, padx=0, pady=0)
+# label_scale1.grid(, y=10, anchor='nw')
+
+entry_scale1 = Entry_1(frame_input)
+entry_scale1.place(x=50, y = 10)
 
 root.mainloop()
